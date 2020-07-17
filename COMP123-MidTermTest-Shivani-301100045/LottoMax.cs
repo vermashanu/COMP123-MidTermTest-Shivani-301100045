@@ -39,7 +39,15 @@ namespace COMP123_MidTermTest_Shivani_301100045
          */
         public void GenerateLottoNumbers()
         {
-            
+            // Loop through generate and display tickets
+            for (int i = 1; i <= ElementNumber; i++)
+            {
+                // Generate the elements
+                PickElements();
+
+                // Display the elements
+                Console.WriteLine("Ticket  " + i + ":  " + base.ToString());
+            }
         }
     }
 }
